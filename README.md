@@ -1,4 +1,4 @@
-# AVSS2019: Violence Detection
+Violence Detection
 
 
 [[Code](https://github.com/JimLee1996/AVSS2019/tree/master/src/VioNet)]
