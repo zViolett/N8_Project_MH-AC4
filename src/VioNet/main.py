@@ -52,7 +52,7 @@ def main(config):
 
     train_batch = config.train_batch
 
-    train_data = VioDB('../VioDB/{}_jpg/'.format(dataset),
+    train_data = VioDB('../VioDB/dataset/{}_jpg/'.format(dataset),
                        '../VioDB/{}_jpg{}.json'.format(dataset, cv), 'training',
                        spatial_transform, temporal_transform, target_transform)
     train_loader = DataLoader(train_data,
@@ -70,7 +70,7 @@ def main(config):
 
     val_batch = config.val_batch
 
-    val_data = VioDB('../VioDB/{}_jpg/'.format(dataset),
+    val_data = VioDB('../VioDB/dataset/{}_jpg/'.format(dataset),
                      '../VioDB/{}_jpg{}.json'.format(dataset, cv), 'validation',
                      spatial_transform, temporal_transform, target_transform)
     val_loader = DataLoader(val_data,
