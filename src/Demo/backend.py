@@ -1,14 +1,28 @@
 import torch
-from model import VioNet
+from model import VioNet, densenet121, C_3D
 
 
 class Backend:
-
+#DensenetLean
     def __init__(self):
         self.device = torch.device(
             'cuda' if torch.cuda.is_available() else 'cpu')
         self.net = VioNet(pretrained=True).to(self.device)
         self.net.eval()  # important
+
+#Densenet
+#    def __init__(self):
+#        self.device = torch.device(
+ #           'cuda' if torch.cuda.is_available() else 'cpu')
+  #      self.net = densenet121(pretrained=True).to(self.device)
+   #     self.net.eval()  # important
+
+#C_3D
+#    def __init__(self):
+#        self.device = torch.device(
+ #           'cuda' if torch.cuda.is_available() else 'cpu')
+  #      self.net = C_3D(pretrained=True).to(self.device)
+   #     self.net.eval()  # important
 
     # input tensor with (batch_size)x3x16x112x112
     def predict(self, x):
