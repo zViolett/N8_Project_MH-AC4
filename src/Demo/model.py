@@ -263,6 +263,6 @@ class C3D(nn.Module):
 def C_3D(pretrained=True):
     model = C3D(num_classes=2  )
     if pretrained:
-        state_dict = torch.load('C3D_movie_150ep.pth',map_location='cuda:0')
+        state_dict = torch.load('c3d_movie_150ep.pth',map_location='cuda:0')
         model.load_state_dict(state_dict, strict=False)
     return model
