@@ -4,7 +4,7 @@
 
 VioNet model
 
-Upload model tại đường link sau rồi thay đổi model path muốn dùng ở trong file model.py:
+Tải và Upload model tại đường link sau lên rồi thay đổi model path muốn dùng ở trong file model.py:
 https://drive.google.com/drive/folders/1KC3lBTtMsnCroRsDXVf-se2lFR1kW-vm?usp=sharing
 
 ### [backend.py](backend.py)
